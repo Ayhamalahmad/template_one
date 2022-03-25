@@ -1,0 +1,89 @@
+/*  start  End Global Rules */
+/* :root {
+--testing-color-for-background-colour: red;
+} */
+/* Small  */
+@media (min-width: 768px) {
+.container {
+ width: 750px;
+ background-color: var(--testing-color-for-background-colour);
+ /* not wroking */
+}
+
+}
+
+/* Medium */
+@media (min-width: 992px) {
+.container
+ width: 970px;
+}
+
+/* Large  */
+@media (min-width: 1200px) {
+.container {
+ width: 1170px;
+ 
+}
+
+/*  End Global Rules */
+
+
+
+/*  start components  */
+@media (max-width: 767px ) {
+    .special-heading  {
+        font-size: 60px;
+    }   
+    .special-heading + p {
+        margin-top: -20px; 
+        
+
+    }
+}
+/*  end components  */
+
+/* start services */
+@media (max-width: 767px ) {
+    
+    .services .services-content .srv {
+        text-align: center;
+        flex-direction: column;    
+    }
+}
+@media (max-width: 1199px) {
+    .image img    {
+        display: none;
+         /*start  for testing */
+ background-color: red;
+ /* end for testing */
+    }
+}
+
+    
+ /* end services */
+
+ /* start  about  */
+ @media (max-width: 991) {
+    .about .about-content  {
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .about .about-content .image::before,
+    .about .about-content .image::after {
+        display: none;
+    }
+    .about .about-content .image {
+        margin: 0 auto 60px;
+    }
+ }
+ /* end about */
+
+ /* start contact */
+ @media (max-width: 767px) {
+    .contact .info .label,
+    .contact .info .link {
+        font-size: 25px;
+    }
+ }
+ /* end contact */
